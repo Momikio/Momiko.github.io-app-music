@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/sass/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="./assets/font/fontawesome-free-5.15.3-web/css/all.min.css">
+    <title>appMusic</title>
+</head>
+<body>
+    <img src="./assets/music/Build A Bitch - Bella Poarch.mp3" alt="">
+    <div id="contain">
+        <div id="app-music">
+            <div class="head">
+                <i class="fas fa-chevron-down"></i>
+                <span class="head__title">Indie Rock Road Trip</span>
+                <i class="fas fa-ellipsis-h"></i>
+            </div>
+            <div class="song">
+                <div class="song-title">
+                    <div class="song-title__name"></div>
+                    <div class="song-title__singer"></div>
+                </div>
+                <div class="song-cd" ></div>
+                <audio id="audio" src=""></audio>
+            </div>
+            <div class="progress-contain">
+                <div class="progress-time">
+                    <div class="progress-time__current">00:00</div>
+                    <div class="progress-time__duration">00:00</div>
+                </div>
+                <div class="progress"></div>
+            </div>
+            <div class="control">
+                <i class="fas fa-minus-circle"></i>
+                <i class="btn-prev-song fas fa-step-backward"></i>
+                <i class="btn-playAndPause fas fa-play-circle"></i>
+                <i class="btn-next-song fas fa-step-forward"></i>
+                <i class="btn-heart far fa-heart"></i>
+            </div>
+            <div class="navbar">
+                <i class="btn-random-song fas fa-random"></i>
+                <i class="btn-list-song fas fa-bars"></i>
+                <i class="btn-volume-song fas fa-volume-up"></i>
+                <i class="btn-replay-song fas fa-redo"></i>
+            </div>
+            <div class="plays-list">
+                <i class="btn-close-list fas fa-chevron-right"></i>
+            </div>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>

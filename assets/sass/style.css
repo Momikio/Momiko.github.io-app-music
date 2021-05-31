@@ -1,0 +1,199 @@
+html {
+  font-size: 62.5%;
+  font-family: "Poppins", sans-serif;
+}
+
+#contain {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#app-music {
+  width: 38em;
+  height: 74em;
+  padding: 4em;
+  border-radius: 3em;
+  overflow: hidden;
+  position: relative;
+}
+#app-music .head {
+  color: #ebebeb;
+  font-size: 1.5em;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#app-music .head i {
+  font-size: 1.5em;
+}
+#app-music .song {
+  width: 100%;
+  height: 48em;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+#app-music .song-title {
+  text-align: center;
+  margin-bottom: 2em;
+}
+#app-music .song-title__name {
+  color: #fff;
+  font-size: 2.5em;
+  font-weight: 500;
+}
+#app-music .song-title__singer {
+  margin-top: 1em;
+  color: #ebebeb;
+  font-size: 1.4em;
+  font-weight: 400;
+}
+#app-music .song-cd {
+  background: center/cover no-repeat;
+  width: 28em;
+  height: 28em;
+  border-radius: 50%;
+  transition: all 0.5s ease;
+}
+#app-music .progress-contain {
+  width: 100%;
+  height: 0.6em;
+  background-color: #ebebeb;
+  border-radius: 0.5em;
+  position: relative;
+}
+#app-music .progress-contain .progress-time {
+  position: absolute;
+  width: 100%;
+  top: -1.8em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #ebebeb;
+  font-size: 1.2em;
+  font-weight: 300;
+}
+#app-music .progress-contain .progress-time__duration {
+  color: #fd992d;
+  font-size: 1.2em;
+  font-weight: 300;
+}
+#app-music .progress-contain .progress {
+  width: 0;
+  height: 100%;
+  position: absolute;
+  border-radius: 0.5em;
+  background-color: #fd992d;
+  top: 0;
+  left: 0;
+  transition: all 0.5s ease;
+}
+#app-music .control {
+  display: flex;
+  align-items: center;
+  margin-top: 2em;
+  justify-content: space-between;
+}
+#app-music .control i:first-child, #app-music .control i:last-child {
+  color: #ebebeb;
+  font-size: 1.9em;
+}
+#app-music .control i:nth-child(2), #app-music .control i:nth-child(4) {
+  color: #ebebeb;
+  font-size: 3.6em;
+}
+#app-music .control i:nth-child(3) {
+  color: #fff;
+  font-size: 5em;
+}
+#app-music .control .fas.fa-heart {
+  color: #fd992d;
+}
+#app-music .navbar {
+  width: 100%;
+  margin-top: 2em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #ebebeb;
+  font-size: 1.9em;
+}
+#app-music .navbar .btn-random-song.active,
+#app-music .navbar .btn-replay-song.active {
+  color: #fd992d;
+}
+#app-music .navbar i {
+  width: 10px;
+}
+#app-music .plays-list {
+  width: 38em;
+  height: 74em;
+  border-radius: 3em;
+  overflow-y: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  position: absolute;
+  left: 100%;
+  top: 0;
+  transform: translateX(0);
+  transition: all 0.6s ease;
+}
+#app-music .plays-list .btn-close-list {
+  color: #ebebeb;
+  font-size: 2.4em;
+  margin: 1em 0 0 1em;
+  width: 2em;
+  height: 2em;
+  border-radius: 50%;
+  line-height: 2em;
+  text-align: center;
+}
+#app-music .plays-list .item-song {
+  width: 100%;
+  height: 8em;
+  padding: 0 3em 0 3em;
+  margin-bottom: 0.4em;
+  display: flex;
+  align-items: center;
+  transition: all 0.6s ease;
+  cursor: pointer;
+}
+#app-music .plays-list .item-song__img {
+  background: center/cover no-repeat;
+  width: 5.4em;
+  height: 5.4em;
+  border-radius: 50%;
+}
+#app-music .plays-list .item-song__info {
+  margin-left: 2em;
+}
+#app-music .plays-list .item-song__info-name-song {
+  color: #fff;
+  font-size: 2em;
+  font-weight: 400;
+}
+#app-music .plays-list .item-song__info-singer-name {
+  color: #ebebeb;
+  font-size: 1.6em;
+  font-weight: 400;
+}
+#app-music .plays-list .item-song i {
+  color: #fff;
+  font-size: 2em;
+  margin-left: auto;
+  text-align: right;
+  line-height: 2em;
+  width: 1.4em;
+  height: 2em;
+}
+#app-music .plays-list::-webkit-scrollbar {
+  display: none;
+  /* Chrome Safari */
+}
+
+/*# sourceMappingURL=style.css.map */
